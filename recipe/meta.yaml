@@ -9,15 +9,14 @@ source:
   sha256: 3befc97faf81f306dd16a73da11c3314cf84373c704825c897db4932d0a5f817
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win and vc<14]
 
 requirements:
   build:
     - {{ compiler('cxx') }}
     - cmake
-    - ninja  # [win]
-    - make  # [unix]
+    - make
   host:
     - nlohmann_json
     - zeromq
