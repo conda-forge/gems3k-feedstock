@@ -16,7 +16,8 @@ requirements:
   build:
     - {{ compiler('cxx') }}
     - cmake
-    - make
+    - ninja # [win]
+    - make # [unix]
   host:
     - nlohmann_json
     - zeromq
