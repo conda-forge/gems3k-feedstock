@@ -1,4 +1,4 @@
-{% set version = "4.1.1" %}
+{% set version = "4.2.0" %}
 
 package:
   name: gems3k
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/gemshub/GEMS3K/archive/v{{ version }}.tar.gz
-  sha256: 3befc97faf81f306dd16a73da11c3314cf84373c704825c897db4932d0a5f817
+  sha256: 074051171ea1b8879fec8d2f706495fe2637810746c60787562be4a6a4fa5f6f
 
 build:
   number: 0
@@ -17,7 +17,7 @@ requirements:
     - {{ compiler('cxx') }}
     - cmake
     - ninja  # [win]
-    - make  # [unix]
+    - make
   host:
     - nlohmann_json
     - zeromq
