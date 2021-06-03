@@ -1,7 +1,7 @@
 mkdir build
 cd build
 
-cmake -G Ninja ^
+cmake -G Ninja -j 1 ^
       -DCMAKE_BUILD_TYPE=Release ^
       -DCMAKE_INSTALL_PREFIX:PATH="%LIBRARY_PREFIX%" ^
       -DCMAKE_INCLUDE_PATH:PATH="%LIBRARY_INC%" ^
