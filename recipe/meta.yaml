@@ -22,6 +22,7 @@ requirements:
     - nlohmann_json
     - zeromq
     - cppzmq
+    - spdlog =1.10.0
 
 test:
   commands:
