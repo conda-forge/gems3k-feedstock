@@ -1,5 +1,5 @@
 channel_sources:
-- conda-forge,defaults
+- conda-forge
 channel_targets:
 - conda-forge main
 cxx_compiler:
@@ -12,4 +12,4 @@ target_platform:
 vc:
 - '14'
 zeromq:
-- 4.3.3
+- 4.3.4
