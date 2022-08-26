@@ -19,10 +19,9 @@ requirements:
     - ninja  # [win]
     - make
   host:
-    - nlohmann_json
     - zeromq
     - cppzmq
-    - spdlog =1.10.0
+    - thermofun=0.4.0
 
 test:
   commands:
