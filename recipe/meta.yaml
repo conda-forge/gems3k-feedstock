@@ -21,7 +21,7 @@ requirements:
   host:
     - zeromq
     - cppzmq
-    - thermofun=0.4.0
+    - thermofun =0.4.0
 
 test:
   commands:
