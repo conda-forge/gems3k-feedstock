@@ -9,7 +9,7 @@ source:
   sha256: 5335e0200694a0a95054bb5dcdda9e82ae7cd31f33cea745864069ec6aa45399
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win and vc<14]
 
 requirements:
@@ -20,11 +20,11 @@ requirements:
     - make
     - zeromq
     - cppzmq
-    - thermofun =0.4.1
+    - thermofun >=0.4.1
   host:
     - zeromq
     - cppzmq
-    - thermofun =0.4.1
+    - thermofun >=0.4.1
 
 test:
   commands:
