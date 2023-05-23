@@ -1,11 +1,11 @@
-About gems3k
-============
+About gems3k-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/gems3k-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/gemshub/GEMS3K
 
 Package license: LGPL-3.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/gems3k-feedstock/blob/main/LICENSE.txt)
 
 Summary: Numerical kernel solver of the GEM-Selektor v.3 package for geochemical modelling.
 
