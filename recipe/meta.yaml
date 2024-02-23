@@ -9,7 +9,7 @@ source:
   sha256: 8b1a20c82d3556868f3c836ac018ceb56daf0e2e4e72722a6cf088b0dc23fd24
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win and vc<14]
 
 requirements:
@@ -20,12 +20,16 @@ requirements:
     - make
     - zeromq
     - cppzmq
+    - spdlog >=1.10.0
+    - chemicalfun >=0.1.9
     - thermofun >=0.4.1
   host:
     - zeromq
     - cppzmq
+    - spdlog >=1.10.0
+    - chemicalfun >=0.1.9
     - thermofun >=0.4.1
-
+    
 test:
   commands:
     - test -d ${PREFIX}/include/GEMS3K  # [unix]
