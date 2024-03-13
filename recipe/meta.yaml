@@ -9,8 +9,7 @@ source:
   sha256: 1c31b2e8204766eaa2bcc5154dbe0ef2ede0e5c3677f58f13e4bce3504730292
 
 build:
-  noarch: python
-  number: 0
+  number: 1
   skip: true  # [win and vc<14]
 
 requirements:
@@ -24,7 +23,14 @@ requirements:
     - spdlog >=1.10.0
     - chemicalfun >=0.1.9
     - thermofun >=0.4.1
+    - python                                 # [build_platform != target_platform]
+    - cross-python_{{ target_platform }}     # [build_platform != target_platform]
+    - pybind11                               # [build_platform != target_platform]
+    - pip
   host:
+    - pybind11
+    - python
+    - pip
     - zeromq
     - cppzmq
     - spdlog >=1.10.0
