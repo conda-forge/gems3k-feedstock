@@ -26,16 +26,16 @@ requirements:
     - zeromq
     - cppzmq
     - spdlog >=1.10.0
-    - chemicalfun >=0.1.9
-    - thermofun >=0.4.3
+    - chemicalfun >=0.1.12
+    - thermofun >=0.5.2
   run:
     - python
     - pip
     - zeromq
     - cppzmq
     - spdlog >=1.10.0
-    - chemicalfun >=0.1.9
-    - thermofun >=0.4.3
+    - chemicalfun >=0.1.12
+    - thermofun >=0.5.2
 
 test:
   commands:
