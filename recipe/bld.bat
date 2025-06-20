@@ -3,7 +3,6 @@ cd build
 
 cmake -G Ninja ^
       -DCMAKE_BUILD_TYPE=Release ^
-      -DBUILD_SHARED_LIBS=OFF ^
       -DCMAKE_INSTALL_PREFIX:PATH="%LIBRARY_PREFIX%" ^
       -DCMAKE_INCLUDE_PATH:PATH="%LIBRARY_INC%" ^
       ..
