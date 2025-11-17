@@ -11,6 +11,7 @@ cd build
 
 # Configure step
 cmake -DCMAKE_BUILD_TYPE=Release \
+      -DCMAKE_POLICY_DEFAULT_CMP0148=OLD \
       -DCMAKE_INSTALL_PREFIX="$PREFIX" \
       -DCMAKE_INSTALL_LIBDIR=$PREFIX/lib \
       ..
