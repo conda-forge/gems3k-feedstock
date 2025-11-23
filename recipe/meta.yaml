@@ -19,11 +19,14 @@ requirements:
     - cmake
     - ninja  # [win]
     - make
+    - pip
+    - setuptools
+    - wheel
   host:
-    - pybind11
     - python
     - setuptools
-    - pip
+    - wheel
+    - pybind11
     - zeromq
     - cppzmq
     - spdlog >=1.10.0
@@ -31,7 +34,6 @@ requirements:
     - thermofun >=0.5.2
   run:
     - python
-    - pip
     - zeromq
     - cppzmq
     - spdlog >=1.10.0
