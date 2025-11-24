@@ -9,7 +9,7 @@ source:
   sha256: 0fbea9a8a7f93f9458785a3e103f4972cc64ee8cf4c3470fc650a2aefb598d7a
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win and vc<14]
 
 requirements:
@@ -19,14 +19,14 @@ requirements:
     - cmake
     - ninja  # [win]
     - make
-    - python                                 # [build_platform != target_platform]
-    - cross-python_{{ target_platform }}     # [build_platform != target_platform]
-    - pybind11                               # [build_platform != target_platform]
+    - pip
+    - setuptools
+    - wheel
   host:
-    - pybind11
     - python
     - setuptools
-    - pip
+    - wheel
+    - pybind11
     - zeromq
     - cppzmq
     - spdlog >=1.10.0
@@ -34,7 +34,6 @@ requirements:
     - thermofun >=0.5.2
   run:
     - python
-    - pip
     - zeromq
     - cppzmq
     - spdlog >=1.10.0
