@@ -10,10 +10,12 @@ mkdir -p build
 cd build
 
 # Configure step
-cmake -DCMAKE_BUILD_TYPE=Release \
+cmake -DPYTHON_EXECUTABLE:FILEPATH="$PYTHON" \
+      -DSOLMOD4RKT_PYTHON_INSTALL_PREFIX="$PREFIX" \
+      -DCMAKE_BUILD_TYPE=Release \
       -DCMAKE_INSTALL_PREFIX="$PREFIX" \
       -DCMAKE_INSTALL_LIBDIR=$PREFIX/lib \
       ..
 # Build step
-make
+make -j${CPU_COUNT}
 make install
