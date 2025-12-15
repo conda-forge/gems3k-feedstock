@@ -15,22 +15,25 @@ build:
 requirements:
   build:
     - {{ compiler('cxx') }}
-    - {{ stdlib("c") }}
+    - {{ compiler('c') }}
+    - {{ stdlib('c') }}
     - cmake
     - ninja  # [win]
-    - make
-    - pip
-    - setuptools
-    - wheel
+    - make   # [unix]
+    - python  # [win or osx]
+    - pip  # [win or osx]
+    - setuptools  # [win or osx]
+    - wheel  # [win or osx]
 
   host:
     - python
+    - pip
     - setuptools
     - wheel
     - pybind11
     - zeromq
     - cppzmq
-    - spdlog >=1.10.0
+    - spdlog
     - chemicalfun >=0.1.13
     - thermofun >=0.5.4
 
@@ -38,7 +41,7 @@ requirements:
     - python
     - zeromq
     - cppzmq
-    - spdlog >=1.10.0
+    - spdlog
     - chemicalfun >=0.1.13
     - thermofun >=0.5.4
 
