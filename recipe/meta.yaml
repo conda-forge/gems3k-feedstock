@@ -9,7 +9,7 @@ source:
   sha256: 4d2fc6d6dc0b9e262eff4324a76dea65bfb90bcc19c27cc5effc5ec5d0d7332a
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win and vc<14]
 
 requirements:
@@ -22,6 +22,7 @@ requirements:
     - pip
     - setuptools
     - wheel
+
   host:
     - python
     - setuptools
@@ -30,21 +31,24 @@ requirements:
     - zeromq
     - cppzmq
     - spdlog >=1.10.0
-    - chemicalfun >=0.1.12
-    - thermofun >=0.5.2
+    - chemicalfun >=0.1.13
+    - thermofun >=0.5.4
+
   run:
     - python
     - zeromq
     - cppzmq
     - spdlog >=1.10.0
-    - chemicalfun >=0.1.12
-    - thermofun >=0.5.2
+    - chemicalfun >=0.1.13
+    - thermofun >=0.5.4
 
 test:
   commands:
     - test -d ${PREFIX}/include/GEMS3K  # [unix]
     - test -f ${PREFIX}/include/GEMS3K/node.h  # [unix]
     - if exist %LIBRARY_PREFIX%\include\GEMS3K\node.h (exit 0) else (exit 1)  # [win]
+  imports:
+    - solmod4rkt
 
 about:
   home: https://github.com/gemshub/GEMS3K
