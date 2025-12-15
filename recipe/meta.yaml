@@ -1,4 +1,4 @@
-{% set version = "4.4.3" %}
+{% set version = "4.4.4" %}
 
 package:
   name: gems3k
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://github.com/gemshub/GEMS3K/archive/v{{ version }}.tar.gz
-  sha256: 0fbea9a8a7f93f9458785a3e103f4972cc64ee8cf4c3470fc650a2aefb598d7a
+  sha256: 4d2fc6d6dc0b9e262eff4324a76dea65bfb90bcc19c27cc5effc5ec5d0d7332a
 
 build:
-  number: 1
+  number: 0
   skip: true  # [win and vc<14]
 
 requirements:
