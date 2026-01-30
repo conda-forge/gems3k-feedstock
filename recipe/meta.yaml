@@ -35,7 +35,7 @@ requirements:
     - cppzmq
     - spdlog
     - chemicalfun >=0.1.13
-    - thermofun >=0.5.4 # should be changed in next release 
+    - thermofun >=0.5.4
 
   run:
     - python
