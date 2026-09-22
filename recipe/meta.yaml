@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://github.com/gemshub/GEMS3K/archive/v{{ version }}.tar.gz
-  sha256: 7daac3e809b2f7109534d235df4802c54df611f829e400169e8a5afb5bcde6be
+  sha256: f93cfc50cd02836bf7a4e86e682e8acfeedf0bd5adeda958297fd366e56b6c75 
 
 build:
-  number: 1
+  number: 0
   skip: true  # [win and vc<14]
 
 requirements:
