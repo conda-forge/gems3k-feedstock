@@ -35,7 +35,8 @@ requirements:
     - cppzmq
     - spdlog
     - chemicalfun >=0.1.13
-    - thermofun >=0.5.4
+    - thermofun >=0.7.1
+    - autodiff
 
   run:
     - python
@@ -43,7 +44,7 @@ requirements:
     - cppzmq
     - spdlog
     - chemicalfun >=0.1.13
-    - thermofun >=0.5.4
+    - thermofun >=0.7.1
 
 test:
   commands:
