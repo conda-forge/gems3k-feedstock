@@ -1,4 +1,4 @@
-{% set version = "4.6.1" %}
+{% set version = "4.6.2" %}
 
 package:
   name: gems3k
@@ -6,11 +6,11 @@ package:
 
 source:
   url: https://github.com/gemshub/GEMS3K/archive/v{{ version }}.tar.gz
-  sha256: f93cfc50cd02836bf7a4e86e682e8acfeedf0bd5adeda958297fd366e56b6c75
+  sha256: 6e1d285f6cb6e9094857554e0d3d6612970629ffb756ce945e6a2d0732698ce7
 
 build:
   number: 0
-  skip: true  # [win and vc<14]
+  skip: true  # [(win and vc<14) or linux_aarch64 or linux_ppc64le or py==315]
 
 requirements:
   build:
@@ -35,7 +35,8 @@ requirements:
     - cppzmq
     - spdlog
     - chemicalfun >=0.1.13
-    - thermofun >=0.5.4
+    - thermofun >=0.7.1
+    - autodiff
 
   run:
     - python
@@ -43,7 +44,7 @@ requirements:
     - cppzmq
     - spdlog
     - chemicalfun >=0.1.13
-    - thermofun >=0.5.4
+    - thermofun >=0.7.1
 
 test:
   commands:
