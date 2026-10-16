@@ -10,7 +10,7 @@ source:
 
 build:
   number: 0
-  skip: true  # [(win and vc<14) or linux_aarch64 or py315]
+  skip: true  # [(win and vc<14) or linux_aarch64 or linux_ppc64le or py==315]
 
 requirements:
   build:
